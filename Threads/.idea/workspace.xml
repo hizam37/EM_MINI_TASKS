@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dc930fc-180a-48bc-81a5-fe613cf620e4" name="Changes" comment="" />
+    <list default="true" id="7dc930fc-180a-48bc-81a5-fe613cf620e4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,9 +19,24 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;hizam37&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/hizam37/EM_MINI_TASKS.git&quot;,
+    &quot;accountId&quot;: &quot;9c2768a5-2513-4d1f-99a1-53cbb990b232&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="30jcEPOj2LVPyqTf8ToUukyhnU5" />
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
@@ -34,6 +51,8 @@
     "Application.Main.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "#1 on dev",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/div/visualvm_217/bin/visualvm",
     "node.js.detected.package.eslint": "true",
@@ -75,11 +94,16 @@
       <option name="presentableId" value="Default" />
       <updated>1754144311836</updated>
       <workItem from="1754144313028" duration="4570000" />
+      <workItem from="1754464130073" duration="64000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FIRST_TASK_UPDATED" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIRST_TASK_UPDATED" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
