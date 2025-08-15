@@ -6,7 +6,8 @@ public class RingBuffer<E> {
     private int readerIndex=0;
     private int writerIndex=-1;
     private final int capacity;
-
+    private int size=0;
+    private boolean closed;
 
 
     @SuppressWarnings("unchecked")
@@ -17,30 +18,49 @@ public class RingBuffer<E> {
 
     public void offer(E element)
     {
-        boolean isFull = (writerIndex - readerIndex) +1 == capacity;
-        int nextWriterIndex=0;
+        if (closed) {
+            throw new IllegalStateException("Buffer is closed");
+        }
+        boolean isFull =  (writerIndex + 1) % capacity == writerIndex;
+        int nextWriterIndex;
         if(!isFull)
         {
             nextWriterIndex = writerIndex + 1;
             data[nextWriterIndex%capacity] = element;
             writerIndex++;
+            size++;
         }
     }
 
 
     public E poll()
     {
-        boolean isFull = writerIndex<readerIndex;
+        boolean isFull = writerIndex==readerIndex;
         if(!isFull)
         {
             E nextValue = data[readerIndex%capacity];
-           readerIndex++;
-           return nextValue;
+            readerIndex++;
+            return nextValue;
         }
-
+        size--;
         return null;
     }
 
+    public boolean isEmpty()
+    {
+        return size==0;
+    }
+
+    public void clean()
+    {
+        writerIndex=-1;
+        readerIndex=0;
+    }
+
+    public boolean close()
+    {
+        return closed=true;
+    }
 
     public String toString() {
         return Arrays.toString(data);
