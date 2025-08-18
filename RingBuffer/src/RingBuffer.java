@@ -16,7 +16,7 @@ public class RingBuffer<E> {
         this.data = (E[]) new Object[this.capacity];
     }
 
-    public void offer(E element)
+    public synchronized void offer(E element)
     {
         if (closed) {
             throw new IllegalStateException("Buffer is closed");
@@ -33,7 +33,7 @@ public class RingBuffer<E> {
     }
 
 
-    public E poll()
+    public synchronized E poll()
     {
         boolean isFull = writerIndex==readerIndex;
         if(!isFull)
